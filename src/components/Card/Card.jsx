@@ -38,7 +38,7 @@ const Card = ({ data }) => {
       />
 
       {/* Card Image Component */}
-      <CardImage image={data?.image} />
+      <CardImage image={data?.image} title={data?.content?.title} />
 
       {/* Card Content Component */}
       <CardContent
@@ -47,10 +47,15 @@ const Card = ({ data }) => {
         author={data?.content?.author}
         tags={data?.content?.tags}
         rating={data?.content?.rating}
+        miniImage={data?.image}
       />
 
       {/* Reactions Section Component */}
-      <Reactions reactions={data?.reactions} isTextVisible={isTextVisible} />
+      <Reactions
+        reactions={data?.reactions}
+        hasReactions={data?.hasReactions}
+        isTextVisible={isTextVisible}
+      />
     </div>
   );
 };
