@@ -1,19 +1,24 @@
 import StarRating from "../../lib/Rating/Rating";
 
-const CardContent = ({ title, description, author, tags, rating }) => {
+const CardContent = ({
+  title,
+  description,
+  author,
+  tags,
+  rating,
+  miniImage,
+}) => {
   return (
-    <div className="my-3">
+    <div className="my-2">
       <div className="flex items-center gap-x-2">
         <img
-          src={
-            "https://img.freepik.com/premium-vector/letter-logo-your-business-company-identity_992321-5.jpg"
-          }
-          className="w-16 h-10 object-cover border "
-          alt="Logo"
+          src={miniImage}
+          className="w-16 h-10 object-cover  "
+          alt={title}
           loading="lazy"
         />
         <div className="flex flex-col">
-          <h4 className="text-xl font-bold tracking-tight text-gray-900">
+          <h4 className="text-xl font-bold tracking-tight text-gray-900 cursor-pointer">
             {title}
           </h4>
           <div className="flex items-center gap-x-1 text-sm text-gray-600">
@@ -29,13 +34,17 @@ const CardContent = ({ title, description, author, tags, rating }) => {
       </div>
 
       {/* Rating Component */}
-      <div className="flex items-center gap-x-2 mt-2">
+      <div className="flex items-center mt-2">
         <span className="text-gray-600"></span>
         <StarRating rating={rating} />
-        <span className="text-gray-600">({rating})</span>
+        <span className="text-gray-600 ml-2 font-semibold">{rating}</span>
       </div>
 
-      <p className="mb-3 font-normal text-gray-700">{description}</p>
+      <p className="mb-3 font-normal text-gray-600">
+        {description.length > 65
+          ? description.slice(0, 65) + "..."
+          : description}
+      </p>
     </div>
   );
 };
