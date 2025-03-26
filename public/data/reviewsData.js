@@ -18,10 +18,10 @@ export const reviewsData = [
       rating: 3.5,
     },
     reactions: {
-      likes: 120,
+      likes: 20,
       comments: 50,
       shares: 30,
-      views: 15,
+      views: 150,
     },
   },
   {
@@ -43,10 +43,10 @@ export const reviewsData = [
       rating: 2.8,
     },
     reactions: {
-      likes: 200,
-      comments: 120,
+      likes: 20,
+      comments: 70,
       shares: 90,
-      views: 50,
+      views: 500,
     },
   },
   {
@@ -68,10 +68,10 @@ export const reviewsData = [
       rating: 3.7,
     },
     reactions: {
-      likes: 180,
+      likes: 50,
       comments: 80,
       shares: 60,
-      views: 30,
+      views: 300,
     },
   },
   {
@@ -93,10 +93,10 @@ export const reviewsData = [
       rating: 3.6,
     },
     reactions: {
-      likes: 150,
+      likes: 60,
       comments: 70,
       shares: 40,
-      views: 25,
+      views: 250,
     },
   },
   {
@@ -118,10 +118,10 @@ export const reviewsData = [
       rating: 2.3,
     },
     reactions: {
-      likes: 250,
-      comments: 150,
+      likes: 70,
+      comments: 50,
       shares: 120,
-      views: 60,
+      views: 600,
     },
   },
   {
@@ -143,10 +143,10 @@ export const reviewsData = [
       rating: 1.9,
     },
     reactions: {
-      likes: 180,
+      likes: 80,
       comments: 90,
       shares: 50,
-      views: 20,
+      views: 200,
     },
   },
   {
@@ -171,7 +171,7 @@ export const reviewsData = [
       likes: 210,
       comments: 110,
       shares: 70,
-      views: 40,
+      views: 400,
     },
   },
   {
@@ -193,10 +193,10 @@ export const reviewsData = [
       rating: 4.7,
     },
     reactions: {
-      likes: 300,
-      comments: 150,
+      likes: 35,
+      comments: 50,
       shares: 90,
-      views: 75,
+      views: 750,
     },
   },
   {
@@ -218,10 +218,10 @@ export const reviewsData = [
       rating: 4.8,
     },
     reactions: {
-      likes: 250,
-      comments: 120,
+      likes: 50,
+      comments: 20,
       shares: 80,
-      views: 55,
+      views: 505,
     },
   },
   {
@@ -243,10 +243,10 @@ export const reviewsData = [
       rating: 4.9,
     },
     reactions: {
-      likes: 280,
-      comments: 130,
+      likes: 80,
+      comments: 30,
       shares: 100,
-      views: 40,
+      views: 400,
     },
   },
   {
@@ -268,10 +268,10 @@ export const reviewsData = [
       rating: 4.6,
     },
     reactions: {
-      likes: 230,
-      comments: 100,
+      likes: 30,
+      comments: 10,
       shares: 60,
-      views: 45,
+      views: 405,
     },
   },
   {
@@ -293,10 +293,10 @@ export const reviewsData = [
       rating: 4.8,
     },
     reactions: {
-      likes: 310,
-      comments: 140,
+      likes: 31,
+      comments: 40,
       shares: 110,
-      views: 85,
+      views: 805,
     },
   },
   {
@@ -318,10 +318,10 @@ export const reviewsData = [
       rating: 4.7,
     },
     reactions: {
-      likes: 190,
+      likes: 90,
       comments: 95,
       shares: 70,
-      views: 50,
+      views: 500,
     },
   },
   {
@@ -343,10 +343,10 @@ export const reviewsData = [
       rating: 4.5,
     },
     reactions: {
-      likes: 220,
-      comments: 130,
+      likes: 20,
+      comments: 30,
       shares: 90,
-      views: 60,
+      views: 600,
     },
   },
   {
@@ -368,10 +368,10 @@ export const reviewsData = [
       rating: 4.6,
     },
     reactions: {
-      likes: 250,
-      comments: 160,
+      likes: 50,
+      comments: 60,
       shares: 130,
-      views: 70,
+      views: 700,
     },
   },
   {
@@ -393,10 +393,10 @@ export const reviewsData = [
       rating: 4.7,
     },
     reactions: {
-      likes: 300,
-      comments: 170,
+      likes: 30,
+      comments: 70,
       shares: 110,
-      views: 80,
+      views: 800,
     },
   },
   {
@@ -419,9 +419,9 @@ export const reviewsData = [
     },
     reactions: {
       likes: 260,
-      comments: 140,
+      comments: 40,
       shares: 100,
-      views: 65,
+      views: 650,
     },
   },
   {
@@ -444,9 +444,9 @@ export const reviewsData = [
     },
     reactions: {
       likes: 220,
-      comments: 110,
+      comments: 10,
       shares: 75,
-      views: 40,
+      views: 400,
     },
   },
   {
@@ -469,9 +469,9 @@ export const reviewsData = [
     },
     reactions: {
       likes: 350,
-      comments: 180,
+      comments: 80,
       shares: 140,
-      views: 90,
+      views: 900,
     },
   },
   {
@@ -494,9 +494,9 @@ export const reviewsData = [
     },
     reactions: {
       likes: 280,
-      comments: 130,
+      comments: 30,
       shares: 100,
-      views: 50,
+      views: 500,
     },
   },
 ];
