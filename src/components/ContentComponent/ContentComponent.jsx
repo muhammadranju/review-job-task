@@ -34,10 +34,9 @@ const CardContent = ({
       </div>
 
       {/* Rating Component */}
-      <div className="flex items-center mt-2">
-        <span className="text-gray-600"></span>
+      <div className="flex items-center text-center mt-2">
         <StarRating rating={rating} />
-        <span className="text-gray-600 ml-2 font-semibold">{rating}</span>
+        <span className="text-gray-600 ml-2 mt-1 font-semibold">{rating}</span>
       </div>
 
       <p className="mb-3 font-normal text-gray-600">
