@@ -1,12 +1,14 @@
 import StarRating from "../../lib/Rating/Rating";
 
-const CardContent = ({ title, description, author, tags, rating, logo }) => {
+const CardContent = ({ title, description, author, tags, rating }) => {
   return (
     <div className="my-3">
       <div className="flex items-center gap-x-2">
         <img
-          src={logo}
-          className="w-20 border rounded-lg"
+          src={
+            "https://img.freepik.com/premium-vector/letter-logo-your-business-company-identity_992321-5.jpg"
+          }
+          className="w-16 h-10 object-cover border "
           alt="Logo"
           loading="lazy"
         />
