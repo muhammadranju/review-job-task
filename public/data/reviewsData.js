@@ -12,7 +12,7 @@ export const reviewsData = [
     content: {
       title: "Noteworthy technology",
       description:
-        "Here are the biggest enterprise technology acquisitions biggest enterprise...",
+        "Here are the biggest enterprise technology acquisitions biggest enterprise",
       author: "@tartaruskaredesign",
       tags: ["Coffee", "Breakfast"],
       rating: 3.5,
@@ -22,6 +22,11 @@ export const reviewsData = [
       comments: 50,
       shares: 30,
       views: 150,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -37,7 +42,7 @@ export const reviewsData = [
     content: {
       title: "The Future of AI",
       description:
-        "Discover the latest trends in AI technology and its future impact...",
+        "Discover the latest trends in AI technology and its future impact",
       author: "@janesmith_ai",
       tags: ["AI", "Technology"],
       rating: 2.8,
@@ -47,6 +52,11 @@ export const reviewsData = [
       comments: 70,
       shares: 90,
       views: 500,
+    },
+    hasReactions: {
+      like: true,
+      love: false,
+      wow: true,
     },
   },
   {
@@ -61,8 +71,7 @@ export const reviewsData = [
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: {
       title: "Blockchain Revolution",
-      description:
-        "How blockchain is transforming the way we conduct business...",
+      description: "How blockchain is transforming the way we conduct business",
       author: "@samuelgreen_blockchain",
       tags: ["Blockchain", "Finance"],
       rating: 3.7,
@@ -72,6 +81,11 @@ export const reviewsData = [
       comments: 80,
       shares: 60,
       views: 300,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: true,
     },
   },
   {
@@ -86,8 +100,7 @@ export const reviewsData = [
       "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: {
       title: "The Rise of Electric Vehicles",
-      description:
-        "Electric vehicles are taking over the automotive industry...",
+      description: "Electric vehicles are taking over the automotive industry",
       author: "@aliceev",
       tags: ["Electric Vehicles", "Automotive"],
       rating: 3.6,
@@ -97,6 +110,11 @@ export const reviewsData = [
       comments: 70,
       shares: 40,
       views: 250,
+    },
+    hasReactions: {
+      like: false,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -111,8 +129,7 @@ export const reviewsData = [
       "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: {
       title: "Tech Giants and Market Trends",
-      description:
-        "Analyzing the impact of tech giants on the global market...",
+      description: "Analyzing the impact of tech giants on the global market",
       author: "@davidbrown_tech",
       tags: ["Tech Giants", "Market Trends"],
       rating: 2.3,
@@ -122,6 +139,11 @@ export const reviewsData = [
       comments: 50,
       shares: 120,
       views: 600,
+    },
+    hasReactions: {
+      like: true,
+      love: false,
+      wow: true,
     },
   },
   {
@@ -137,7 +159,7 @@ export const reviewsData = [
     content: {
       title: "Exploring Quantum Computing",
       description:
-        "A deep dive into the world of quantum computing and its applications...",
+        "A deep dive into the world of quantum computing and its applications",
       author: "@sophiadavis_tech",
       tags: ["Quantum Computing", "Innovation"],
       rating: 1.9,
@@ -147,6 +169,11 @@ export const reviewsData = [
       comments: 90,
       shares: 50,
       views: 200,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -162,7 +189,7 @@ export const reviewsData = [
     content: {
       title: "Smart Home Technology",
       description:
-        "The evolution of smart home devices and their integration into everyday life...",
+        "The evolution of smart home devices and their integration into everyday life",
       author: "@jameswhite_smarttech",
       tags: ["Smart Home", "Technology"],
       rating: 4.4,
@@ -172,6 +199,11 @@ export const reviewsData = [
       comments: 110,
       shares: 70,
       views: 400,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -187,7 +219,7 @@ export const reviewsData = [
     content: {
       title: "The Impact of 5G Networks",
       description:
-        "How 5G networks are set to change communication and internet usage globally...",
+        "How 5G networks are set to change communication and internet usage globally",
       author: "@emilytaylor_5g",
       tags: ["5G", "Networks"],
       rating: 4.7,
@@ -197,6 +229,11 @@ export const reviewsData = [
       comments: 50,
       shares: 90,
       views: 750,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -212,7 +249,7 @@ export const reviewsData = [
     content: {
       title: "Virtual Reality in Education",
       description:
-        "The role of virtual reality in revolutionizing the educational landscape...",
+        "The role of virtual reality in revolutionizing the educational landscape",
       author: "@michaelclark_vr",
       tags: ["Virtual Reality", "Education"],
       rating: 4.8,
@@ -222,6 +259,11 @@ export const reviewsData = [
       comments: 20,
       shares: 80,
       views: 505,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -237,7 +279,7 @@ export const reviewsData = [
     content: {
       title: "Artificial Intelligence in Healthcare",
       description:
-        "Exploring how AI is transforming healthcare and medical practices...",
+        "Exploring how AI is transforming healthcare and medical practices",
       author: "@gracelee_health",
       tags: ["AI", "Healthcare"],
       rating: 4.9,
@@ -247,6 +289,11 @@ export const reviewsData = [
       comments: 30,
       shares: 100,
       views: 400,
+    },
+    hasReactions: {
+      like: true,
+      love: false,
+      wow: true,
     },
   },
   {
@@ -262,7 +309,7 @@ export const reviewsData = [
     content: {
       title: "The Future of Work with Automation",
       description:
-        "How automation is reshaping the job market and work environment...",
+        "How automation is reshaping the job market and work environment",
       author: "@danielrod_automation",
       tags: ["Automation", "Work"],
       rating: 4.6,
@@ -272,6 +319,11 @@ export const reviewsData = [
       comments: 10,
       shares: 60,
       views: 405,
+    },
+    hasReactions: {
+      like: false,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -287,7 +339,7 @@ export const reviewsData = [
     content: {
       title: "The Rise of Cryptocurrency",
       description:
-        "Cryptocurrency and its impact on the global financial system...",
+        "Cryptocurrency and its impact on the global financial system",
       author: "@sophiam_cryptocurrency",
       tags: ["Cryptocurrency", "Finance"],
       rating: 4.8,
@@ -298,11 +350,16 @@ export const reviewsData = [
       shares: 110,
       views: 805,
     },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
+    },
   },
   {
     id: 13,
     user: {
-      name: "Oliver Harris",
+      name: "Oliker Harris",
       avatar:
         "https://static.vecteezy.com/system/resources/previews/006/487/917/original/man-avatar-icon-free-vector.jpg",
       timeAgo: "2 days ago",
@@ -312,8 +369,8 @@ export const reviewsData = [
     content: {
       title: "The Importance of Cybersecurity",
       description:
-        "Why cybersecurity is critical for businesses and individuals...",
-      author: "@oliverh_cybersec",
+        "Why cybersecurity is critical for businesses and individuals",
+      author: "@olikerh_cybersec",
       tags: ["Cybersecurity", "Technology"],
       rating: 4.7,
     },
@@ -322,6 +379,11 @@ export const reviewsData = [
       comments: 95,
       shares: 70,
       views: 500,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -337,7 +399,7 @@ export const reviewsData = [
     content: {
       title: "Augmented Reality in Retail",
       description:
-        "How augmented reality is enhancing customer experiences in retail...",
+        "How augmented reality is enhancing customer experiences in retail",
       author: "@ethanyoung_ar",
       tags: ["Augmented Reality", "Retail"],
       rating: 4.5,
@@ -347,6 +409,11 @@ export const reviewsData = [
       comments: 30,
       shares: 90,
       views: 600,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: true,
     },
   },
   {
@@ -362,7 +429,7 @@ export const reviewsData = [
     content: {
       title: "Sustainable Energy Solutions",
       description:
-        "Exploring renewable energy solutions and their potential impact on the environment...",
+        "Exploring renewable energy solutions and their potential impact on the environment",
       author: "@isabellaw_sustainability",
       tags: ["Renewable Energy", "Environment"],
       rating: 4.6,
@@ -372,6 +439,11 @@ export const reviewsData = [
       comments: 60,
       shares: 130,
       views: 700,
+    },
+    hasReactions: {
+      like: false,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -387,7 +459,7 @@ export const reviewsData = [
     content: {
       title: "Smart Cities and IoT",
       description:
-        "How the Internet of Things (IoT) is transforming urban life and smart cities...",
+        "How the Internet of Things (IoT) is transforming urban life and smart cities",
       author: "@jacobmartinez_iot",
       tags: ["Smart Cities", "IoT"],
       rating: 4.7,
@@ -397,6 +469,11 @@ export const reviewsData = [
       comments: 70,
       shares: 110,
       views: 800,
+    },
+    hasReactions: {
+      like: true,
+      love: false,
+      wow: false,
     },
   },
   {
@@ -412,7 +489,7 @@ export const reviewsData = [
     content: {
       title: "Machine Learning for Business",
       description:
-        "How businesses can use machine learning to drive growth and innovation...",
+        "How businesses can use machine learning to drive growth and innovation",
       author: "@charlotteking_ml",
       tags: ["Machine Learning", "Business"],
       rating: 4.8,
@@ -422,6 +499,11 @@ export const reviewsData = [
       comments: 40,
       shares: 100,
       views: 650,
+    },
+    hasReactions: {
+      like: false,
+      love: true,
+      wow: true,
     },
   },
   {
@@ -437,7 +519,7 @@ export const reviewsData = [
     content: {
       title: "The Future of Autonomous Vehicles",
       description:
-        "How autonomous vehicles are shaping the future of transportation...",
+        "How autonomous vehicles are shaping the future of transportation",
       author: "@aidenscott_autonomous",
       tags: ["Autonomous Vehicles", "Transportation"],
       rating: 4.6,
@@ -447,6 +529,11 @@ export const reviewsData = [
       comments: 10,
       shares: 75,
       views: 400,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -461,8 +548,7 @@ export const reviewsData = [
       "https://images.unsplash.com/photo-1619096118293-a34a2f9b7339?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: {
       title: "Digital Transformation in Healthcare",
-      description:
-        "How digital transformation is revolutionizing healthcare...",
+      description: "How digital transformation is revolutionizing healthcare",
       author: "@ameliaperez_digitalhealth",
       tags: ["Digital Transformation", "Healthcare"],
       rating: 4.9,
@@ -472,6 +558,11 @@ export const reviewsData = [
       comments: 80,
       shares: 140,
       views: 900,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
   {
@@ -487,7 +578,7 @@ export const reviewsData = [
     content: {
       title: "The Role of AI in Art",
       description:
-        "How artificial intelligence is making waves in the art world...",
+        "How artificial intelligence is making waves in the art world ",
       author: "@lucasharris_aiart",
       tags: ["AI", "Art"],
       rating: 4.7,
@@ -497,6 +588,11 @@ export const reviewsData = [
       comments: 30,
       shares: 100,
       views: 500,
+    },
+    hasReactions: {
+      like: true,
+      love: true,
+      wow: false,
     },
   },
 ];
