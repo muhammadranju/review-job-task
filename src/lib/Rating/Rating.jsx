@@ -11,11 +11,11 @@ const StarRating = ({ rating, maxStars = 5 }) => {
       {Array(fullStars)
         .fill()
         .map((_, index) => (
-          <FaStar key={`full-${index}`} className="text-yellow-400 text-2xl" />
+          <FaStar key={`full-${index}`} className="text-yellow-400 text-3xl" />
         ))}
 
       {/* Half Star */}
-      {halfStar && <FaStarHalfAlt className="text-yellow-400 text-2xl" />}
+      {halfStar && <FaStarHalfAlt className="text-yellow-400 text-3xl" />}
 
       {/* Empty Stars */}
       {Array(emptyStars)
@@ -23,7 +23,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
         .map((_, index) => (
           <FaRegStar
             key={`empty-${index}`}
-            className="text-gray-300 text-2xl"
+            className="text-gray-300 text-3xl"
           />
         ))}
     </div>
