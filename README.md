@@ -1,12 +1,18 @@
-# React + Vite
+## Review App - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that displays a list of reviews. It uses Tailwind CSS for styling and React for the UI components.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays a list of reviews with their content, rating, and reactions.
+- Provides a "Show More" button to load more reviews.
+- Uses Tailwind CSS for styling.
+- Uses React for the UI components.
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You can see the live demo of this application at [https://review-job-task.netlify.app](https://review-job-task.netlify.app).
+
+## Screenshots
+
+![Screenshot](./public/screenshot.jpeg)
