@@ -16,4 +16,4 @@ You can see the live demo of this application at [https://review-job-task-ts.net
 
 ## Screenshots
 
-![Screenshot](./public/screenshot.jpeg)
+![Screenshot](./public/screenshot-ts.jpeg)
