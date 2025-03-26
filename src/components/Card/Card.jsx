@@ -47,7 +47,6 @@ const Card = ({ data }) => {
         author={data?.content?.author}
         tags={data?.content?.tags}
         rating={data?.content?.rating}
-        logo={data?.logo}
       />
 
       {/* Reactions Section Component */}
