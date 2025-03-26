@@ -11,12 +11,16 @@ const Card = ({ data }) => {
   useEffect(() => {
     const handleResizeCard = () => {
       if (cardRef.current) {
-        const cardWidth = cardRef.current.offsetWidth; // get the width of the card
+        const cardWidth = parseInt(
+          cardRef.current.getBoundingClientRect().width
+        ); // get the width of the card
+
+        console.log(cardWidth);
 
         if (cardWidth > 470) {
-          setIsTextVisible(true);
+          return setIsTextVisible(true);
         } else {
-          setIsTextVisible(false);
+          return setIsTextVisible(false);
         }
       }
     };

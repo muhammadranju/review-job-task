@@ -6,19 +6,27 @@ import Card from "./components/Card/Card";
 import Header from "./components/HeaderComponent/HeaderComponent";
 
 function App() {
-  // Default page size (6 items per page)
-  const itemsPerPage = 6;
+  const itemsPerPage = 6; // Default page size 6 items per page
 
-  // State to keep track of the data being shown
-  const [showPage, setShowPage] = useState(1);
+  const [showPage, setShowPage] = useState(1); // Current page
 
-  // Get the data for the current page
-  const currentData = reviewsData.slice(0, showPage * itemsPerPage);
+  const totalItems = reviewsData.length; // Total number of items
 
-  // Handle the "Show More" button click
+  const totalPages = Math.ceil(totalItems / itemsPerPage); // Total number of pages
+
+  console.log(totalPages);
+
+  const currentData = reviewsData.slice(0, showPage * itemsPerPage); // Get the data for the current page
+
+  console.log(currentData);
+
   const handleShowMore = () => {
-    setShowPage(showPage + 1);
+    // Handle the Show More button click
+    if (showPage < totalPages) {
+      setShowPage(showPage + 1);
+    }
   };
+
   return (
     <main>
       {/* Header Component */}
