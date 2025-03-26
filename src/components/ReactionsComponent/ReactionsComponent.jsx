@@ -3,14 +3,16 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import Reaction from "./Reaction/Reaction";
 import AllReactions from "./AllReactions/AllReactions";
 
-const Reactions = ({ reactions, isTextVisible }) => {
+const Reactions = ({ reactions, isTextVisible, hasReactions }) => {
+  console.log(hasReactions);
   return (
     <div className="border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-between gap-x-2">
       <div className="w-full">
-        <AllReactions reactions={reactions} />
+        <AllReactions reactions={reactions} hasReactions={hasReactions} />
         <hr className="border-gray-200 my-3" />
         <div className="flex justify-between items-center text-gray-700 gap-x-8 px-8">
           <Reaction text={isTextVisible ? "Like" : ""} icon={<FaRegHeart />} />
+
           <Reaction
             text={isTextVisible ? "Comment" : ""}
             icon={<FaRegComment />}
@@ -20,7 +22,7 @@ const Reactions = ({ reactions, isTextVisible }) => {
             icon={<IoShareSocialOutline />}
           />
           <Reaction
-            text={isTextVisible ? "Bookmark" : ""}
+            text={isTextVisible ? "Pin" : ""}
             icon={<FaRegBookmark />}
           />
         </div>
