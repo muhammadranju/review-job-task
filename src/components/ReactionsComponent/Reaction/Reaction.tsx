@@ -1,6 +1,11 @@
-import React from "react";
+import { JSX } from "react";
 
-const Reaction = ({ text = "", icon }) => {
+type ReactionType = {
+  text: string;
+  icon: JSX.Element;
+};
+
+const Reaction = ({ text = "", icon }: ReactionType) => {
   return (
     <span
       className="flex items-center gap-x-2 text-lg cursor-pointer"

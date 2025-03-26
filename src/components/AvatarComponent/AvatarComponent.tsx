@@ -1,4 +1,10 @@
-const Avatar = ({ avatar, name, timeAgo }) => {
+type AvatarType = {
+  avatar: string;
+  name: string;
+  timeAgo: string;
+};
+
+const Avatar = ({ avatar, name, timeAgo }: AvatarType) => {
   return (
     <div className="flex items-center mb-3 gap-x-2">
       <img src={avatar} className="w-12 h-12 rounded-full" alt="User Avatar" />

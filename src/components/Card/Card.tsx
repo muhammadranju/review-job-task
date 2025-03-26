@@ -4,16 +4,54 @@ import CardContent from "../ContentComponent/ContentComponent";
 import CardImage from "../ImageComponent/ImageComponent";
 import Reactions from "../ReactionsComponent/ReactionsComponent";
 
-const Card = ({ data }) => {
-  const [isTextVisible, setIsTextVisible] = useState(true);
-  const cardRef = useRef(null);
+type HasReactionsType = {
+  like: boolean;
+  love: boolean;
+  wow: boolean;
+};
+
+type ReactionsType = {
+  likes: number;
+  comments: number;
+  shares: number;
+  views: number;
+};
+
+type UserType = {
+  name: string;
+  avatar: string;
+  timeAgo: string;
+};
+
+type ContentType = {
+  title: string;
+  description: string;
+  author: string;
+  tags: string[];
+  rating: number;
+};
+
+type CardType = {
+  user: UserType;
+  image: string;
+  content: ContentType;
+  reactions: ReactionsType;
+  hasReactions: HasReactionsType;
+};
+
+type CardTypeProps = {
+  data: CardType;
+};
+
+const Card = ({ data }: CardTypeProps) => {
+  const [isTextVisible, setIsTextVisible] = useState<boolean>(true);
+  const cardRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResizeCard = () => {
-      if (cardRef.current) {
-        const cardWidth = parseInt(
-          cardRef.current.getBoundingClientRect().width
-        ); // get the width of the card
+      if (cardRef.current !== null) {
+        const cardWidth = cardRef.current.getBoundingClientRect().width;
+        // get the width of the card
 
         console.log(cardWidth);
 

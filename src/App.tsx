@@ -1,9 +1,36 @@
 import { useState } from "react";
-import { reviewsData } from "../public/data/reviewsData";
-import "./App.css";
 import Button from "./components/ButtonComponent/ButtonComponent";
 import Card from "./components/Card/Card";
 import Header from "./components/HeaderComponent/HeaderComponent";
+import { reviewsData } from "./data/reviewsData";
+
+type ReviewType = {
+  id: number;
+  user: {
+    name: string;
+    avatar: string;
+    timeAgo: string;
+  };
+  content: {
+    title: string;
+    description: string;
+    author: string;
+    tags: string[];
+    rating: number;
+  };
+  image: string;
+  reactions: {
+    likes: number;
+    comments: number;
+    shares: number;
+    views: number;
+  };
+  hasReactions: {
+    like: boolean;
+    love: boolean;
+    wow: boolean;
+  };
+};
 
 function App() {
   const itemsPerPage = 6; // Default page size 6 items per page
@@ -14,11 +41,10 @@ function App() {
 
   const totalPages = Math.ceil(totalItems / itemsPerPage); // Total number of pages
 
-  console.log(totalPages);
-
   const currentData = reviewsData.slice(0, showPage * itemsPerPage); // Get the data for the current page
 
   console.log(currentData);
+  console.log(totalPages);
 
   const handleShowMore = () => {
     // Handle the Show More button click
@@ -45,7 +71,7 @@ function App() {
 
         {/* list of all the card components */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          {currentData.map((item, index) => {
+          {currentData.map((item: ReviewType, index: number) => {
             return <Card key={index} data={item} />;
           })}
         </div>

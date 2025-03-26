@@ -1,10 +1,27 @@
-import React from "react";
 import { BiSolidLike } from "react-icons/bi";
 import { BsEmojiSurprise } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import ReactionCount from "../ReactionCount/ReactionCount";
 
-const AllReactions = ({ reactions, hasReactions }) => {
+type ReactionsType = {
+  likes: number;
+  comments: number;
+  shares: number;
+  views: number;
+};
+
+type HasReactionsType = {
+  like: boolean;
+  love: boolean;
+  wow: boolean;
+};
+
+type AllReactionsType = {
+  reactions: ReactionsType;
+  hasReactions: HasReactionsType;
+};
+
+const AllReactions = ({ reactions, hasReactions }: AllReactionsType) => {
   return (
     <div className="flex items-center justify-between text-gray-500">
       <div className="flex gap-x-1 items-center text-gray-500 flex-1">

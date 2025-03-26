@@ -1,5 +1,14 @@
 import StarRating from "../../lib/Rating/Rating";
 
+type CardContentType = {
+  title: string;
+  description: string;
+  author: string;
+  tags: string[];
+  rating: number;
+  miniImage: string;
+};
+
 const CardContent = ({
   title,
   description,
@@ -7,7 +16,7 @@ const CardContent = ({
   tags,
   rating,
   miniImage,
-}) => {
+}: CardContentType) => {
   return (
     <div className="my-2">
       <div className="flex items-center gap-x-2">

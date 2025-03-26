@@ -3,7 +3,30 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import AllReactions from "./AllReactions/AllReactions";
 import Reaction from "./Reaction/Reaction";
 
-const Reactions = ({ reactions, isTextVisible, hasReactions }) => {
+type ReactionsType = {
+  likes: number;
+  comments: number;
+  shares: number;
+  views: number;
+};
+
+type HasReactionsType = {
+  like: boolean;
+  love: boolean;
+  wow: boolean;
+};
+
+type ReactionsTypeProps = {
+  reactions: ReactionsType;
+  hasReactions: HasReactionsType;
+  isTextVisible: boolean;
+};
+
+const Reactions = ({
+  reactions,
+  isTextVisible,
+  hasReactions,
+}: ReactionsTypeProps) => {
   return (
     <div className="border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-between gap-x-2">
       <div className="w-full">
