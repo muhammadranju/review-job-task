@@ -33,7 +33,7 @@ function App() {
       <Header />
 
       {/* Card Component */}
-      <section className="w-11/12 mx-auto px-4 pt-10 pb-5 lg:px-8">
+      <section className="w-11/12 mx-auto  pt-10 pb-5 lg:px-8">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-2xl font-bold ">Recent Activity</h3>
           {/* Button Component */}
