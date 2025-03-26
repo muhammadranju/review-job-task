@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { reviewsData } from "../public/data/reviewsData";
 import "./App.css";
+import Button from "./components/ButtonComponent/ButtonComponent";
 import Card from "./components/Card/Card";
 import Header from "./components/HeaderComponent/HeaderComponent";
-import Button from "./components/ButtonComponent/ButtonComponent";
 
 function App() {
   // Default page size (6 items per page)

@@ -1,10 +1,9 @@
 import { FaRegBookmark, FaRegComment, FaRegHeart } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
-import Reaction from "./Reaction/Reaction";
 import AllReactions from "./AllReactions/AllReactions";
+import Reaction from "./Reaction/Reaction";
 
 const Reactions = ({ reactions, isTextVisible, hasReactions }) => {
-  console.log(hasReactions);
   return (
     <div className="border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-between gap-x-2">
       <div className="w-full">

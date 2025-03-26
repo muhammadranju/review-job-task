@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Avatar from "../AvatarComponent/AvatarComponent";
-import CardImage from "../ImageComponent/ImageComponent";
 import CardContent from "../ContentComponent/ContentComponent";
+import CardImage from "../ImageComponent/ImageComponent";
 import Reactions from "../ReactionsComponent/ReactionsComponent";
 
 const Card = ({ data }) => {
@@ -12,9 +12,8 @@ const Card = ({ data }) => {
     const handleResizeCard = () => {
       if (cardRef.current) {
         const cardWidth = cardRef.current.offsetWidth; // get the width of the card
-        const screenWidth = window.innerWidth; // get the width of the screen
 
-        if (cardWidth > 495 || cardWidth > screenWidth * 0.9) {
+        if (cardWidth > 470) {
           setIsTextVisible(true);
         } else {
           setIsTextVisible(false);
