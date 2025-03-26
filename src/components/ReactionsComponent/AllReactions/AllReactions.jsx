@@ -1,0 +1,31 @@
+import React from "react";
+import { BiSolidLike } from "react-icons/bi";
+import { BsEmojiSurprise } from "react-icons/bs";
+import { FaRegHeart } from "react-icons/fa";
+import ReactionCount from "../ReactionCount/ReactionCount";
+
+const AllReactions = ({ reactions }) => {
+  return (
+    <div className="flex items-center justify-between text-gray-500">
+      <div className="flex gap-x-1 items-center text-gray-500 flex-1">
+        <div className="flex -space-x-2 rtl:space-x-reverse">
+          <div className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center">
+            <BiSolidLike className="text-yellow-500" />
+          </div>
+          <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
+            <FaRegHeart className="text-black" />
+          </div>
+          <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center">
+            <BsEmojiSurprise className="text-black" />
+          </div>
+        </div>
+        {reactions?.likes}
+      </div>
+      <ReactionCount count={reactions?.comments} text="comments" />
+      <ReactionCount count={reactions?.shares} text="shares" />
+      <ReactionCount count={reactions?.views} text="views" />
+    </div>
+  );
+};
+
+export default AllReactions;
