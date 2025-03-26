@@ -21,13 +21,17 @@ const Header = () => {
     },
   ];
   return (
-    <header className="sticky top-0 bg-white lg:block hidden">
+    <header className="sticky top-0 bg-white">
       <nav className=" border-gray-200 px-4 shadow lg:px-6 py-2.5  ">
         <div className="flex flex-wrap justify-between items-center mx-auto w-11/12">
           <h1 className="self-center text-2xl font-semibold whitespace-nowrap ">
             Willro
           </h1>
-          <div className="flex items-center lg:order-2">
+          <Button
+            text="For Business"
+            colorStyle="bg-sky-600 text-white font-bold lg:hidden block"
+          />
+          <div className="lg:flex items-center lg:order-2   hidden">
             <div className="space-x-5">
               <Button
                 text="Share a Review"
